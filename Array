@@ -1,0 +1,73 @@
+数组
+1.检测数组
+    *arrName instanceof Array
+    *Array.isArray(arrName) (es5新增)
+2.转换方法
+    *toString()
+    *toLocaleString()
+3.栈方法
+    *push()--数组最后推入两项
+    *pop()--取得数组最后一项
+4.队列方法
+    *shift()--取得数组第一项
+    *unshift()--数组前端插入任意项
+5.排序方法
+    *reverse()--颠倒数组
+    *sort()--根据定义方法排序
+ex:
+    var arr = [1,22,3,44];
+    function compare(val1,val2){
+        if(val1<val2){
+            reture -1
+        }else if(val1>val2){
+            reture 1
+        }else{
+            reture 0
+        }
+    }
+    arr.sort(compare)
+6.操作方法
+    *concat()
+ex:
+    var arr1 = [1]
+    var arr2 = [2,3]
+    arr1.concat(arr2)//只能解析两层
+
+   *splice()
+   a) 删除 splice(index,number)
+      传入两个参数
+      index：从什么位置开始
+      number：需要截取的个数
+      从数组的指定索引arr[index]开始，截取number个元素，返回数组（包含截取的元素）
+      原数组返回截取后的数组
+   b) 插入 splice(index,0,"willSet",...)
+      传入三个+参数
+      从第三个开始为插入的元素
+   c) 批量替换 splice(index,number,"willSet",...)
+      先从index处删除number个数，替换为"willSet",...
+
+    *join("-")---用"-"把每个元素连接起来
+
+7.位置方法
+  *indexof()----返回数组指定元素的index值
+  *lastIndexof()----返回数组指定元素的反向查找的index值
+  *arr.indexof("num");
+  *arr.lastIndexof("num")     ---num元素不存在，则返回-1
+
+
+8.迭代方法（es5）
+    *every()  --返回值为Boolean(执行迭代函数，都为true，则返回true)
+    *some()   --返回值为Boolean(执行迭代函数，有一个+为true，则返回true)
+    *filter() --返回值Array(执行迭代函数为返回true的元素集合)
+    *forEach() --没有返回值
+    *map()  --返回迭代器运行结果组成的Array
+9.归并方法
+    *reduce()
+    *reduceRight()
+    归并函数的需要传入两个参数，开始为前两个元素，执行结果为下次执行函数的第一个参数，依次类推。
+    var arr = [1,2,3,4]
+    function add(a1,a2){
+        return a1+a2
+    }
+    arr.reduce(add)
+    这样子，数组元素就叠加起来了
