@@ -88,4 +88,22 @@ var person2 = new Person("qq",26,"UIer");
     4).函数名称为首字母为大写
     5).创建实例要用new关键字
 3.原型模式
-    后续学习中。。。
+function Person(){
+}
+
+Person.prototype = {
+    constructor:Person,//因为重写了prototype对象，重置constructor指向
+    name:"",
+    age:"",
+    job:"",
+    sayName:function(){
+        alert(this.name)
+    }
+}
+4.组合使用 构造函数模式 和 原型模式
+5.动态原型模式-------（初步理解，判断原型上面是否有我要的属性或者方法，没有的情况添加上去）
+6.寄生构造函数模式
+7.稳妥构造函数模式
+
+
+后续学习中。。。
