@@ -1,0 +1,30 @@
+今天js学习学累了，跟同事学习了下linux系统的静态项目部署。。就占用function的小片位置吧!
+    __________________________________________________________________________________________________________
+   |                                                                                                          |
+   |     linux服务器部署项目                                                                                    |
+   |    名称：root  密码：11111111                                                                              |
+   |     1.安装服务器  http://adc8e19c.wiz03.com/share/s/2JOe6s0R6x7y2FJV1W2R6SqK0mX16s1sf4l32Cc8fL2KjkWn       |
+   |         a). 删除文件 -----> rm -rf filename                                                               |
+   |             文件重命名 ---> mv name1 name2 (将名字name1替换为name2)                                         |
+   |         b). yum install nginx -y                                                                           |
+   |         c). etc/nginx/nginx.conf                                                                           |
+   |             配置外网访问路径---  root usr/share/nginx/html   -------------->    root data/www              |
+   |         d). 根路径下的data里面创建www                                                                   |
+   |         e). 在www下面扔自己的项目  访问就是  ip + projectName                                             |
+   |         f). vim 是linux系统自带的强大编辑器                                                               |
+   |             快捷键   h------>left                                                                       |
+   |                     j------>top                                                                         |
+   |                     k------>down                                                                        |
+   |                     l------>right                                                                      |
+   |                     以上快捷键，移动光标                                                                 |
+   |             退出vim  第一步：按下ESC  第二步：shift+zz（即，两个大写z）                                    |
+   |                                                                                                        |
+   |     2.nginx文件部署路径                                                                                 |
+   |         /usr/share/nginx/html                                                                          |
+   |     3.打包为project.tar.gz                                                                               |
+   |     4.在Linux下解压tar.gz包。    tar -xzf project.tar.gz                                                 |
+   |     5.解析域名                                                                                           |
+   |     6.删除文件   rm -rf fileName                                                                         |
+   |__________________________________________________________________________________________________________|
+
+js  function学习继续进行。。。
