@@ -22,3 +22,40 @@ var handle = function(event){......}
 阻止默认事件的特定行为（比如a链接中href="../index.html"）;
     event.preventDefault();
 
+跨浏览器的事件对象(事件对象的兼容性处理)
+
+var EventUntil = {
+    addHandler:function(element,type,handler){
+
+    },
+    getEvent:function(event){
+        return event?event:window.event
+    },
+    getTarget:function(){
+        return event.target || event.stcElement
+    },
+    preventDefault:function(event){
+        if(event.preventDefault){
+            event.preventDefault()
+        }else{
+            event.returnValue = false
+        }
+    },
+    removeHandler:function(element,type,handler){
+
+    },
+    stopPropagation:function(event){
+        if(event.stopPropagation){
+            event.stopPropagation();
+        }else{
+            event.cancelBubble = true;
+        }
+    }
+}
+
+实例：
+
+element.onclick = function(event){
+    event = EventUntil.getEvent();
+    EventUntil.stopPropagation(event);
+}
