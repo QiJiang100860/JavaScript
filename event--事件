@@ -1,12 +1,24 @@
 javascript事件整理
 
 事件流--描述的是从页面中接收事件的顺序
-
 1.IE的事件流----------事件冒泡
-
 2.netscape的事件流----事件捕获
 
 DOM事件流
+三个阶段
+事件捕获阶段(e.eventPhase == 1) ---- 事件处于目标阶段(e.eventPhase == 2) ---- 事件冒泡阶段(e.eventPhase == 3)
 
-三个阶段  事件捕获阶段 ---- 事件处于目标阶段 ---- 事件冒泡阶段
+ele.addEventListenter("click",handle,[Boolean])
+var handle = function(event){......}
+
+***第三个参数为可选参数（默认为false）
+默认：
+    false---事件在冒泡阶段响应handle事件处理
+    true---事件在捕获阶段响应handle事件处理
+
+阻止冒泡行为
+    event.stopPropagation();
+
+阻止默认事件的特定行为（比如a链接中href="../index.html"）;
+    event.preventDefault();
 
