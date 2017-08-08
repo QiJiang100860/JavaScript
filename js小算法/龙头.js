@@ -5,7 +5,7 @@
 * 4.toLowerCase        ---将字符串中的字母被转换为小写字母
 * */
 window.onload = function () {
-    longHead("jiangCbAaqi");
+    longHead("jAAAiangCbAaqi");
     debugger;
     function longHead(s) {
         var str = s.split("");
