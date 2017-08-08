@@ -12,7 +12,7 @@ window.onload = function () {
         arr.map(function(item,index){
             lengthArr[index] = item.length
         });
-        //拿到数组最小值返回
+        //拿到数组最小值
        return Math.min.apply(Math,lengthArr)
     }
 }
