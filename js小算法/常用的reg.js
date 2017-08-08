@@ -6,9 +6,8 @@ window.onload = function () {
         var reg = /^(\d{4}){1}(\d{2})?$/
         return reg.test(str)
     }
-
     /*是否带有小数*/
-    function    isDecimal(strValue )  {
+    function isDecimal(strValue )  {
         var  objRegExp= /^\d+\.\d+$/;
         return  objRegExp.test(strValue);
     }
