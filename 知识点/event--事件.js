@@ -73,3 +73,28 @@ element.onclick = function(event){
     event = EventUntil.getEvent();
     EventUntil.stopPropagation(event);
 }
+
+
+
+/*
+* 鼠标事件
+*
+* click
+*
+* dblclick
+*
+* mousedown
+*
+* mouseenter
+*
+* mouseleave
+*
+* mousemove
+*
+* mouseout
+*
+* mouseover
+*
+* mouseup
+* */
+
