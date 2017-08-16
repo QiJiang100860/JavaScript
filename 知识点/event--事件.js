@@ -29,7 +29,7 @@ var handle = function(event){
 var EventUntil = {
     addHandler:function(element,type,handler){
         if(element.addEventListener){
-            element.addEventListener(type,handler,false)//在补货阶段获取数据
+            element.addEventListener(type,handler,false)//在冒泡阶段获取数据
         }else if(element.attachEvent){
             element.attachEvent("on"+type,handler)//兼容IE
         }else {
