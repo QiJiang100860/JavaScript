@@ -1,0 +1,23 @@
+一、数据类型
+1、5个基本类型
+    number
+    string
+    boolean
+    undefined
+    null
+2、3个引用类型
+    array
+    object
+    function
+二、内置函数
+三、内置构造函数对象
+    Number
+    String
+    Array
+    Boolean
+    Function
+四、内置的工具对象
+    Math
+    Date
+    RegExp
+
